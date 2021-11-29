@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAPPING CHAT</title>
+    <link rel="stylesheet" href="chat.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+
+</head>
+<body>
+<a href="/index.html"><button>back</button></a>
+    <div class="container clearfix">
+        <div class="people-list" id="people-list">
+          <div class="search">
+            <input type="text" placeholder="search" />
+            <i class="fa fa-search"></i>
+          </div>
+          <ul class="list">
+            <li class="clearfix">
+              <img src="a-modified (7).png" alt="avatar" />
+              <div class="about">
+                <div class="name">โบ้ย้ำตร๊อก</div>
+                <div class="status">
+                  <i class="fa fa-circle online"></i> online
+                </div>
+              </div>
+            </li>
+            
+            <li class="clearfix">
+              <img src="dust-modified.png" alt="avatar" />
+              <div class="about">
+                <div class="name">ภูมิโบ้</div>
+                <div class="status">
+                  <i class="fa fa-circle offline"></i> left 7 mins ago
+                </div>
+              </div>
+            </li>
+            
+            <li class="clearfix">
+              <img src="korn-modified (4).png" alt="avatar" />
+              <div class="about">
+                <div class="name">โบ้สายเขียว</div>
+                <div class="status">
+                  <i class="fa fa-circle online"></i> online
+                </div>
+              </div>
+            </li>
+            
+            <li class="clearfix">
+              <img src="opor-modified.png" alt="avatar" />
+              <div class="about">
+                <div class="name">โบ้นุ่มนิ๋ม</div>
+                <div class="status">
+                  <i class="fa fa-circle online"></i> online
+                </div>
+              </div>
+            </li>
+            
+            <li class="clearfix">
+              <img src="Guy-modified (1).png" alt="avatar" />
+              <div class="about">
+                <div class="name">โบ้ติดหลี</div>
+                <div class="status">
+                  <i class="fa fa-circle online"></i> online
+                </div>
+              </div>
+            </li>
+            
+            <li class="clearfix">
+              <img src="phu-modified-modified (2).png" alt="avatar" />
+              <div class="about">
+                <div class="name">ศาสตราจารย์โบ้</div>
+                <div class="status">
+                  <i class="fa fa-circle offline"></i> left 30 mins ago
+                </div>
+              </div>
+            </li>
+            
+            <li class="clearfix">
+              <img src="win-modified (1).png" alt="avatar" />
+              <div class="about">
+                <div class="name">โบ้ตุ๋น</div>
+                <div class="status">
+                  <i class="fa fa-circle offline"></i> left 10 hours ago
+                </div>
+              </div>
+            </li>
+            
+            <li class="clearfix">
+              <img src="joe-modified (2).png" alt="avatar" />
+              <div class="about">
+                <div class="name">ผู้ช่วยศาสตราจารย์โบ้</div>
+                <div class="status">
+                  <i class="fa fa-circle online"></i> online
+                </div>
+              </div>
+            </li>
+            
+            <li class="clearfix">
+              <img src="per-modified.png" alt="avatar" />
+              <div class="about">
+                <div class="name">โบ้ติดปีก</div>
+                <div class="status">
+                  <i class="fa fa-circle offline"></i> offline since Oct 28
+                </div>
+              </div>
+            </li>
+            
+            
+          </ul>
+        </div>
+        
+        <div class="chat">
+          <div class="chat-header clearfix">
+            <img src="a-modified (7).png" alt="avatar" />
+            
+            <div class="chat-about">
+              <div class="chat-with">Chat with โบ้ย้ำตร๊อก</div>
+              <div class="chat-num-messages">already 1 902 messages</div>
+            </div>
+            <i class="fa fa-star"></i>
+          </div> <!-- end chat-header -->
+          
+          <div class="chat-history">
+            <ul>
+              <li class="clearfix">
+                <div class="message-data align-right">
+                  <span class="message-data-time" >10:10 AM, Today</span> &nbsp; &nbsp;
+                  <span class="message-data-name" >ภูเพื่อนรัก</span> <i class="fa fa-circle me"></i>
+                  
+                </div>
+                <div class="message other-message float-right">
+                  <p>สวัสดีครับ ผมมีของอยากแลกเปลี่ยน</p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="message-data">
+                  <span class="message-data-name"><i class="fa fa-circle online"></i> โบ้ย้ำตร๊อก</span>
+                  <span class="message-data-time">10:12 AM, Today</span>
+                </div>
+                <div class="message my-message">
+                  <p>แลกเปลี่ยนอะไรครับ</p>
+                </div>
+              </li>
+              
+              <li class="clearfix">
+                <div class="message-data align-right">
+                  <span class="message-data-time" >10:14 AM, Today</span> &nbsp; &nbsp;
+                  <span class="message-data-name" >ภูเพื่อนรัก</span> <i class="fa fa-circle me"></i>
+                  
+                </div>
+                <div class="message other-message float-right">
+                  ผมมี.....ครับ
+                </div>
+              </li>
+              
+              <li>
+                <div class="message-data">
+                  <span class="message-data-name"><i class="fa fa-circle online"></i> โบ้ย้ำตร๊อก</span>
+                  <span class="message-data-time">10:20 AM, Today</span>
+                </div>
+                <div class="message my-message">
+                  <p>โอเคครับ ติดต่อมาเบอร์ผมเลยครับ 012-345-6789</p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="message-data">
+                  <span class="message-data-name"><i class="fa fa-circle online"></i> โบ้ย้ำตร๊อก</span>
+                  <span class="message-data-time">10:31 AM, Today</span>
+                </div>
+                <i class="fa fa-circle online"></i>
+                <i class="fa fa-circle online" style="color: #AED2A6"></i>
+                <i class="fa fa-circle online" style="color:#DAE9DA"></i>
+              </li>
+              
+            </ul>
+            
+          </div> <!-- end chat-history -->
+          
+          <div class="chat-message clearfix">
+            <textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="3"></textarea>
+                    
+            <i class="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
+            <i class="fa fa-file-image-o"></i>
+            
+            <button>Send</button>
+    
+          </div> <!-- end chat-message -->
+          
+        </div> <!-- end chat -->
+        
+      </div> <!-- end container -->
+    
+    <script id="message-template" type="text/x-handlebars-template">
+      <li class="clearfix">
+        <div class="message-data align-right">
+          <span class="message-data-time" >{{time}}, Today</span> &nbsp; &nbsp;
+          <span class="message-data-name" >Olia</span> <i class="fa fa-circle me"></i>
+        </div>
+        <div class="message other-message float-right">
+          {{messageOutput}}
+        </div>
+      </li>
+    </script>
+    
+    <script id="message-response-template" type="text/x-handlebars-template">
+      <li>
+        <div class="message-data">
+          <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+          <span class="message-data-time">{{time}}, Today</span>
+        </div>
+        <div class="message my-message">
+          {{response}}
+        </div>
+      </li>
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
